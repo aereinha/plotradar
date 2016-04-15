@@ -7,4 +7,4 @@ Must have paramiko installed for getlastrawfile to work
 To run:
 ipython notebook in the folder
 launch Plot Raw realtime.ipyb
-Run first 3 cells
+Run first 4 cells
