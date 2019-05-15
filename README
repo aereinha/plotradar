@@ -4,6 +4,27 @@ Must have geopy installed for gridtool to work.
 Must have pyart, json, urllib2, matplotlib, and basemap installed for the rotation tool to work.
 Must have paramiko installed for getlastrawfile to work
 
+A “shapefiles" directory alongside the notebook is needed. Within it, place US Census TIGER road shapefiles.
+If a network connection is available they will be downloaded automatically.
+
+The shapefile path and FTP URL for the TIGER shapefiles is listed [in the source](https://github.com/deeplycloudy/plotradar/blob/master/SigmentRotationCheck.py#L107).
+
+```
+$ pwd
+/home/user/plotradar/shapefiles
+$ ls .
+tl_2014_48017_roads	tl_2014_48107_roads	tl_2014_48189_roads	tl_2014_48279_roads	tl_2014_48369_roads
+tl_2014_48045_roads	tl_2014_48125_roads	tl_2014_48191_roads	tl_2014_48303_roads	tl_2014_48437_roads
+tl_2014_48069_roads	tl_2014_48153_roads	tl_2014_48219_roads	tl_2014_48305_roads	tl_2014_48445_roads
+tl_2014_48079_roads	tl_2014_48169_roads	tl_2014_48263_roads	tl_2014_48345_roads	tl_2014_48501_roads
+$ ls tl_2014_48017_roads/
+tl_2014_48017_roads.dbf			tl_2014_48017_roads.shp.ea.iso.xml	tl_2014_48017_roads.shx
+tl_2014_48017_roads.prj			tl_2014_48017_roads.shp.iso.xml
+tl_2014_48017_roads.shp			tl_2014_48017_roads.shp.xml
+
+```
+
+
 To run:
 ipython notebook in the folder
 launch Plot Raw realtime.ipyb
